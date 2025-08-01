@@ -1,25 +1,25 @@
-from modelos.restaurante import Restaurante
-from modelos.cardapio.bebida import Bebida
-from modelos.cardapio.prato import Prato
-from modelos.cardapio.sobremesa import Sobremesa
+from models.restaurante import Restaurant
+from models.menu.beverage import Beverage
+from models.menu.dishes import Dishes
+from models.menu.dessert import Dessert
 
-restaurante_praça = Restaurante('Praça', 'Gourmet')
+restaurant_square = Restaurant('Square', 'Gourmet')
 
-bebida_suco = Bebida('Suco de Laranja', 5.00, 'Médio')
-bebida_suco.aplicar_desconto()
+beverage_juice = Beverage('Orange Juice', 5.00, 'Medium')
+beverage_juice.apply_discount()
 
-prato_salada = Prato('Salada Caesar', 15.00, 'Salada com alface, croutons e molho Caesar')
-prato_salada.aplicar_desconto()
+salad_dish = Dishes('Caesar Salad', 15.00, 'Salad with lettuce, croutons and Caesar dressing')
+salad_dish.apply_discount()
 
-sobremesa_chocolate = Sobremesa('Brownie de Chocolate', 10.00, 'Pequeno', 'Doce', 'Brownie de chocolate com sorvete')
-sobremesa_chocolate.aplicar_desconto()
+chocolate_dessert = Dessert('Chocolate Brownie', 10.00, 'Small', 'Sweet', 'Chocolate brownie with ice cream')
+chocolate_dessert.apply_discount()
 
-restaurante_praça.adcionar_no_cardapio(bebida_suco)
-restaurante_praça.adcionar_no_cardapio(prato_salada)
-restaurante_praça.adcionar_no_cardapio(sobremesa_chocolate)
+restaurant_square.add_to_menu(beverage_juice)
+restaurant_square.add_to_menu(salad_dish)
+restaurant_square.add_to_menu(chocolate_dessert)
 
 def main():
-    restaurante_praça.exibir_cardapio
+    restaurant_square.display_menu
     
 if __name__ == "__main__":
     main()
