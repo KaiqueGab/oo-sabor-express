@@ -2,6 +2,8 @@
 
 A simple restaurant management system built in Python, allowing you to manage restaurants, menus, and customer ratings.
 
+> **This project was developed as part of the "Python with Object-Oriented Programming" training from [Alura](https://cursos.alura.com.br/formacao-linguagem-python).**
+
 ## Features
 
 - Register restaurants with categories
@@ -9,22 +11,7 @@ A simple restaurant management system built in Python, allowing you to manage re
 - Apply discounts to menu items
 - Display restaurant menus
 - Receive and calculate customer ratings
-<!-- ## Project Structure -->
 
-<!-- ```
-restaurante_o_sabor/
-│
-├── app.py                  # Main application file
-├── models/
-│   ├── restaurante.py      # Restaurant class
-│   ├── rating.py           # Rating class
-│   └── menu/
-│       ├── item_menu.py    # Abstract base class for menu items
-│       ├── beverage.py     # Beverage class
-│       ├── dishes.py       # Dishes class
-│       └── dessert.py      # Dessert class
-└── README.md               # Project documentation
-``` -->
 ## How to Run
 
 1. Clone this repository.
@@ -58,3 +45,5 @@ restaurant.show_menu
 ## Requirements
 
 - Python >= 3.12
+
+This project is for educational purposes.
